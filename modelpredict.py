@@ -9,7 +9,7 @@ class ModelPredict():
 
 	def download_model(self):
 		if path.exists('export.pkl') == False:
-			url = 'https://drive.google.com/uc?id=1V30NUR4t0pZ0a76d8NMx5XQ7NSSbyR__&export=download'
+			url = 'https://drive.google.com/file/d/1AJiF7P7ER5iYfEH8vGFsX2YOnDMI6xci/view?usp=sharing'
 			filename = 'export.pkl'
 			urlretrieve(url,filename)
 
@@ -22,5 +22,5 @@ class ModelPredict():
 
 
 if __name__=='__main__':
-	m = ModelPredict('auto-3734396_1280.jpg').predict()
+	m = ModelPredict('/content/drive/MyDrive/kalem/highlighter/download.jpg').predict()
 	print(m)
